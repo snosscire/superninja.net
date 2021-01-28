@@ -1,0 +1,139 @@
+@import 'nord';
+
+html {
+	background-color: $nord5;
+	color: $nord0;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color: $nord10;
+}
+
+a:hover {
+	color: $nord10;
+	background-color: $nord4;
+	border-radius: 4px;
+}
+
+
+#header {
+	height: 100vh;
+}
+
+header {
+	position: relative;
+	top: 40%;
+	height: 55%;
+	text-align: center;
+	color: $nord3;
+
+	img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	h5 {
+		font-size: 110%;
+	}
+
+	.arrow {
+		position: absolute;
+		font-size: 150%;
+		bottom: 0;
+	}
+}
+
+#summary {
+	background-color: #fff;
+
+	h3 {
+		font-size: 160%;
+	}
+
+	h4 {
+		font-size: 130%;
+	}
+
+	ul {
+		li {
+			font-size: 115%;
+
+			i {
+				margin-top: 3px;
+			}
+		}
+	}
+}
+
+#skills, #educations {
+	background-color: $nord5;
+
+	h2 {
+		text-align: center;
+		font-size: 200%;
+	}
+}
+
+#experiences, #projects {
+	background-color: #fff;
+
+	h2 {
+		text-align: center;
+		font-size: 200%;
+	}
+}
+
+#experiences, #educations {
+	.entry {
+		h4 {
+			font-size: 150%;
+		}
+
+		h5 {
+			font-size: 125%;
+		}
+
+		.date {
+			color: $nord3;
+			font-size: 90%;
+		}
+
+		p, ul {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		ul {
+			list-style-type: square;
+			margin-left: 2em;
+			li {
+				margin-top: 0.25rem;
+				margin-bottom: 0.25rem;
+			}
+		}
+	}
+}
+
+#footer {
+	text-align: center;
+	background-color: $nord1;
+	color: $nord5;
+
+	a {
+		color: $nord8;
+	}
+
+	a:hover {
+		color: $nord8;
+		background-color: $nord3;
+		border-radius: 4px;
+	}
+}

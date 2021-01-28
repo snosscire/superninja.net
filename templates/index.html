@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="header">
+	<header>
+		<img src="tobias.png" width="84">
+		<h1>Hi, I am Tobias</h1>
+		<h5>Scroll down to learn more about me</h5>
+		<i class="arrow fa fa-chevron-down" aria-hidden="true"></i>
+	</header>
+</div>
+
+<div id="summary" class="py-6">
+	<div class="container is-max-desktop">
+		<div class="columns">
+			<div class="column">
+				{% set about = get_page(path="about.md") %}
+				<h3>{{ about.title }}</h3>
+				<h4 class="mb-3">{{ about.extra.company_role }} at <a href="{{ about.extra.company_url }}">{{ about.extra.company_name }}</a></h4>
+				{{ about.content | safe }}
+			</div>
+			<div class="column is-narrow">
+				{% set links = get_section(path="summary-links/_index.md") %}
+				<ul class="fa-ul">
+					{% for link in links.pages %}
+					<li><i class="fa-li fa {{ link.extra.icon }}" aria-hidden="true"></i> {{ link.content | safe}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="skills" class="py-6">
+	<div class="container is-max-desktop">
+		<h2 class="mb-4">Skills</h2>
+		<div class="columns is-multiline">
+			{% set skills = get_section(path="skills/_index.md") %}
+			{% for skill in skills.pages %}
+			<div class="column is-one-third">
+				<div class="box">
+					<div class="media">
+						<figure class="media-left">
+							<img src="{{ skill.extra.icon }}" width="32">
+						</figure>
+						<div class="media-content">
+							<div class="content">
+								<h4>{{ skill.title  }}</h4>
+								{{ skill.content | safe }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<div id="experiences" class="py-6">
+	<div class="container is-max-desktop">
+		<h2 class="mb-4">Professional experience</h2>
+		{% set experiences = get_section(path="experiences/_index.md") %}
+		{% for exp in experiences.pages %}
+		<div class="entry">
+			{% if exp.extra.url %}
+				<h4><a href="{{ exp.extra.url }}">{{ exp.title }}</a></h4>
+			{% else %}
+				<h4>{{ exp.title }}</h4>
+			{% endif %}
+			<h5>{{ exp.extra.role }}</h4>
+			<div class="date">
+				<i class="fa fa-calendar"></i> {{ exp.extra.date_start}} - {{ exp.extra.date_end }},
+				<i class="fa fa-map-marker"></i> {{ exp.extra.location }}
+			</div>
+			{{ exp.content | safe }}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+<div id="educations" class="py-6">
+	<div class="container is-max-desktop">
+		<h2 class="mb-4">Education</h2>
+		{% set educations = get_section(path="educations/_index.md") %}
+		{% for edu in educations.pages %}
+		<div class="box">
+		<div class="entry">
+			{% if edu.extra.url %}
+				<h4><a href="{{ edu.extra.url }}">{{ edu.title }}</a></h4>
+			{% else %}
+				<h4>{{ edu.title }}</h4>
+			{% endif %}
+			<div class="date">
+				<i class="fa fa-calendar"></i> {{ edu.extra.date_start}} - {{ edu.extra.date_end }},
+				<i class="fa fa-map-marker"></i> {{ edu.extra.location }}
+			</div>
+			{{ edu.content | safe }}
+		</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+<div id="projects" class="py-6">
+	<div class="container is-max-desktop">
+		<h2 class="mb-4">Projects</h2>
+		<div class="columns is-multiline">
+			{% set projects = get_section(path="projects/_index.md") %}
+			{% for project in projects.pages %}
+			<div class="column is-half">
+				<div class="box">
+					<div class="media">
+						<figure class="media-left">
+							<img src="{{ project.extra.icon }}" width="32">
+						</figure>
+						<div class="media-content">
+							<div class="content">
+								<h4><a href="{{ project.extra.url }}">{{ project.title  }}</a></h4>
+								{{ project.content | safe }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock content %}
