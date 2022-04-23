@@ -1,6 +1,6 @@
 +++
 title = "Sass"
-weight = 6
+weight = 14
 [extra]
 icon = "sass.png"
 +++

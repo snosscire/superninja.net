@@ -1,8 +1,7 @@
 +++
-title = "React JavaScript library"
-weight = 5
+title = "React library"
+weight = 13
 [extra]
 icon = "react.png"
 +++
-All of Cention's products are built using React.
-Five years for experience building front-ends for web applications. 
+Used at Cention and ICA. Five years of experience. 

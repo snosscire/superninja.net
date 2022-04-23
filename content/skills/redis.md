@@ -1,6 +1,6 @@
 +++
 title = "Redis"
-weight = 6
+weight = 14
 [extra]
 icon = "redis.png"
 +++

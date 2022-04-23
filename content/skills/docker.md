@@ -1,7 +1,8 @@
 +++
 title = "Docker"
-weight = 12
+weight = 5
 [extra]
 icon = "docker.png"
 +++
-Used daily in Cention's development environments.
+Used daily at ICA in development, testing and production environments and
+before that at Cention in development environments.

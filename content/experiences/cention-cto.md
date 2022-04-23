@@ -6,7 +6,7 @@ url = "https://www.cention.com"
 location = "Stockholm, Sweden"
 role = "Chief Technology Officer"
 date_start = "Mars 2019"
-date_end = "Present"
+date_end = "August 2021"
 +++
 Cention provides a cloud based contact center solution delivered as
 Software as a Service (SaaS) for medium sized and big businesses.

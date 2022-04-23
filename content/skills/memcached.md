@@ -1,6 +1,6 @@
 +++
 title = "Memcached"
-weight = 6
+weight = 14
 [extra]
 icon = "memcached.png"
 +++
