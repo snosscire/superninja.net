@@ -4,20 +4,20 @@ date = 2021-08-22
 [extra]
 url = "https://www.icagruppen.se"
 location = "Västerås, Sweden"
-role = "Software Developer"
+role = "System Architect"
 date_start = "August 2021"
 date_end = "Present"
 +++
 I work in VUIT Finance and Payroll which are responsible for finance and payroll
-systems at ICA. There I am a software developer and solution architect in the
-team Technology and Integration which primarily is responsible for the
+systems at ICA. There I am a system architect in the
+team Tech and Integration which primarily is responsible for the
 technology required for integration between finance and payroll systems
 and to make sure the data that flows between them always goes where it is supposed to.
 
-In the role as the team's solution architect I actively take part in developing
+In the role as the team's software architect I actively take part in developing
 solutions in Java, Spring Boot, TypeScript and React as well as being responsible for
 the team's software architecture and I am the team's spokesperson when
-collaboration and planning with other solution architects are required.
+collaboration and planning with other enterprise and solution architects are required.
 
 In larger initiatives I also act as a technical project leader where I collect
 demands from stakeholders and coordinate with other teams at ICA in projects that

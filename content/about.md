@@ -1,7 +1,7 @@
 +++
 title = "Tobias Eriksson"
 [extra]
-company_role = "Software Developer"
+company_role = "System Architect"
 company_name = "ICA Sverige AB"
 company_url  = "https://www.icagruppen.se"
 +++
