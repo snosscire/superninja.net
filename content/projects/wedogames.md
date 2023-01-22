@@ -6,4 +6,4 @@ url = "https://wedogames.com"
 icon = "wedogames.png"
 +++
 Develop computer games for fun and yearly compete at
-the gamedev compo at [Birdie](https://www.birdie.org/en/).
+the gamedev compo at [Birdie](https://www.birdie.org/).
