@@ -1,9 +1,9 @@
 +++
 title = "Tobias Eriksson"
 [extra]
-company_role = "System Architect"
-company_name = "ICA Sverige AB"
-company_url  = "https://www.icagruppen.se"
+company_role = "Software developer"
+company_name = "Skatteverket"
+company_url  = "https://www.skatteverket.se"
 +++
 I am a software developer both by profession and at heart.
 I've specialized in building web based software using modern cloud
